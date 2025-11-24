@@ -1,11 +1,13 @@
 export {};
 
+// 既存システムが期待するインターフェース
 interface Target {
-  getCsvData(): string;
+  getCsvData(): string; // CSV形式がほしい
 }
 
 class NewLibrary {
   getJsonData() {
+    // でもJSON形式しか提供できない
     return [
       {
         data1: "json_dataA",
